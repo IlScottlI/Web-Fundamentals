@@ -1,0 +1,95 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+}
+.main {
+  margin: 20px;
+  display: inline-block;
+  white-space: break-spaces;
+}
+.title {
+  color: ghostwhite;
+  text-transform: uppercase;
+  text-align: end;
+  margin-bottom: -2rem;
+}
+body {
+  background-color: black;
+}
+.maintitle {
+  color: white;
+  text-align: end;
+  font-size: 2.75rem;
+  line-height: 2.75rem;
+}
+.details {
+  background-color: #555050;
+  color: white;
+  padding-left: 14rem;
+  padding-right: 4rem;
+  margin-top: -13rem;
+  border-radius: 10px;
+}
+.avatar {
+  border-radius: 120px;
+}
+#programs {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+#programs td,
+#programs th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#programs tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#programs tr:hover {
+  background-color: #ddd;
+}
+
+#programs th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #909491;
+  color: white;
+}
+
+form {
+  padding: 1rem;
+}
+
+input#email {
+  width: 20%;
+  margin-bottom: 1rem;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
