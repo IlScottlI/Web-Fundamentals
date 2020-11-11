@@ -38,12 +38,14 @@ body {
   border-collapse: collapse;
   width: 100%;
   background-color: rgb(255, 255, 255);
+  margin-bottom: -50px;
 }
 
 #programs td,
 #programs th {
   border: 1px solid #ddd;
   padding: 8px;
+  color: black;
 }
 
 #programs tr:nth-child(even) {
@@ -64,6 +66,8 @@ body {
 
 form {
   padding: 1rem;
+  background-color: #555050;
+  border-radius: 10px;
 }
 
 input#email {
@@ -76,10 +80,10 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #333;
-}
-
-li {
-  float: left;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 80px;
 }
 
 li a {
@@ -89,7 +93,45 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
 }
-
-li a:hover:not(.active) {
-  background-color: #111;
+.more {
+  color: ghostwhite;
+  text-transform: uppercase;
+  margin-bottom: -2rem;
+}
+.link {
+  margin: -30px;
+}
+input#email {
+  width: 50%;
+  height: 30px;
+  border-radius: 10px;
+}
+.radioWrapper {
+  display: inline-flex;
+}
+.radio {
+  display: flex;
+  padding-right: 20px;
+}
+label.radioLabel {
+  padding-left: 10px;
+}
+.optionsWrapper {
+  display: grid;
+  padding: 30px;
+}
+.option {
+  display: flex;
+  align-items: center;
+}
+.optionInput {
+  margin-right: 10px;
+}
+input.submitButton {
+  background-color: darkslategrey;
+  padding: 10px;
+  border-width: thick;
+  border-style: groove;
+  border-radius: 10px;
+  border-color: darkslategray;
 }
