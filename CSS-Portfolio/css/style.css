@@ -1,0 +1,17 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.main {
+  background-image: url("/img/portfolio_assignment.png");
+  width: 100%;
+  min-height: 1063px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0px auto;
+}
+.top-bar {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 1004px;
+  height: 67px;
+}
