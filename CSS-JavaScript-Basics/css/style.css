@@ -1,0 +1,102 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.background {
+  /* background-image: url(../img/jsloups.png); */
+  min-height: 725px;
+  min-width: 1214px;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -100;
+  background-color: #12355b;
+}
+.navbar {
+  height: 77px;
+  background: rgb(216 66 57);
+  margin: 12px 6px 7px 8px;
+  border-radius: 8px;
+}
+.navbar-h1 {
+  color: white;
+  padding: 20px;
+}
+.sidebar-nav {
+  display: inline-block;
+  height: 199px;
+  width: 175px;
+  background-color: #2c7f8b;
+  border-radius: 23px;
+  margin: 12px 0px 0px 8px;
+  padding: 20px;
+}
+.main-content {
+  display: inline-block;
+  height: 528px;
+  width: 960px;
+  background-color: rgb(12 24 33);
+  border-radius: 23px;
+  margin: 12px 0px 0px 18px;
+  vertical-align: top;
+}
+.footer {
+  height: 58px;
+  width: 1200px;
+  background-color: #5c6672;
+  border-radius: 20px;
+  margin: 19px 0px 0px 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px 0px 0px 20px;
+}
+ul {
+  list-style-type: disc;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 20px;
+}
+a {
+  color: #55dbe3;
+}
+li {
+  color: white;
+}
+ul li::marker {
+  color: silver;
+}
+ul li ul li::marker {
+  color: silver;
+}
+ul li ul li {
+  list-style: circle;
+}
+h1.main-h1 {
+  color: #bfd7ea;
+  margin: 32px 0px 0px 18px;
+  font-size: 24px;
+  font-weight: 700;
+}
+p.main-p {
+  color: #bfd6ea;
+  line-height: 18px;
+  padding: 8px 20px 0px 20px;
+}
+ul.main-ul {
+  padding: 2px 0px 0px 41px;
+}
+p.main-li-p {
+  margin-right: 20px;
+  color: #bfd6ea;
+}
+strong.main-strong {
+  color: #7692ff;
+  font-size: 14.5px;
+  font-weight: bold;
+}
+li.main-li {
+  margin: 10px 0px 0px 0px;
+}
+.footer-h5 {
+  color: #bfd6ea;
+}
