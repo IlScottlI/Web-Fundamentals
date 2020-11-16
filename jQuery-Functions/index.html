@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>jQuery-Functions</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md">
+        <div class="container-fluid"><a class="navbar-brand" href=""><img id="home_link" src="assets/img/coding_dojo_logo_white.png"></a>
+            <div class="collapse navbar-collapse" id="navcol-1"></div>
+        </div>
+    </nav>
+    <h2 class="text-center front-center"><strong>jQuery Functions</strong><br></h2>
+    <div class="container">
+        <div role="tablist" id="accordion-1">
+            <div class="card">
+                <div class="card-header" role="tab">
+                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-1" href="#accordion-1 .item-1"><strong>AddClass</strong><br></a></h5>
+                </div>
+                <div class="collapse item-1" role="tabpanel" data-parent="#accordion-1">
+                    <div class="card-body"><div id="addClass">
+  <button class="btn btn-success">Add Class</button>
+  <p>Click the button to add class "text-success" to this paragraph</p>
+  <div>
+    <button class="btn btn-danger">Remove Class</button>
+  </div>
+</div>
+</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab">
+                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-2" href="#accordion-1 .item-2"><strong>Append</strong><br></a></h5>
+                </div>
+                <div class="collapse item-2" role="tabpanel" data-parent="#accordion-1" id="appendContent">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-xl-2 text-center d-flex flex-grow-1 justify-content-between align-items-center align-content-around align-self-start"><button class="btn btn-success" id="appendBtn" type="button">Append</button><button class="btn btn-danger" id="appendRemove" type="button">Remove</button></div>
+                            <div class="col">
+                                <div class="table-responsive">
+                                    <table class="table" id="appendTable">
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Timestamp</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="appendTableBody"></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab">
+                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-3" href="#accordion-1 .item-3"><strong>Click</strong></a></h5>
+                </div>
+                <div class="collapse item-3" role="tabpanel" data-parent="#accordion-1" id="clickAction">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-xl-2 text-center d-xl-flex justify-content-xl-center align-items-xl-center"><button class="btn btn-primary" id="clickBtn1" type="button">Click</button></div>
+                            <div class="col-xl-8">
+                                <p>&lt;= Click</p>
+                                <p class="text-right">Click =&gt;&nbsp;</p>
+                            </div>
+                            <div class="col-xl-2 text-center d-xl-flex justify-content-xl-center align-items-xl-center"><button class="btn btn-primary" id="clickBtn2" type="button">Click</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab">
+                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-4" href="#accordion-1 .item-4"><strong>Hide</strong></a></h5>
+                </div>
+                <div class="collapse item-4" role="tabpanel" data-parent="#accordion-1">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <div class="btn-group" role="group"><button class="btn btn-success" id="hide" type="button">Hide</button><button class="btn btn-danger" id="hideRemove" type="button">Reset</button></div>
+                            </div>
+                            <div class="col-xl-9">
+                                <div class="alert alert-success" role="alert" id="hideAlert"><span><strong>Alert</strong> text.</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab">
+                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-5" href="#accordion-1 .item-5"><strong>Show</strong><br></a></h5>
+                </div>
+                <div class="collapse item-5" role="tabpanel" data-parent="#accordion-1">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <div class="btn-group" role="group"><button class="btn btn-success" id="show" type="button">Show</button><button class="btn btn-danger" id="showRemove" type="button">Reset</button></div>
+                            </div>
+                            <div class="col-xl-9">
+                                <div class="alert alert-success" role="alert" id="showAlert"><span><strong>Alert</strong> text.</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab">
+                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-6" href="#accordion-1 .item-6"><strong>SlideToggle</strong><br></a></h5>
+                </div>
+                <div class="collapse item-6" role="tabpanel" data-parent="#accordion-1">
+                    <div class="card-body"><div id="slideToggle">
+  <button class="btn btn-success">Slide Toggle</button>
+  <p>Click the button to Toggle slideUp() and slideDown()</p>
+  <div></div>
+</div>
+</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab">
+                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-7" href="#accordion-1 .item-7"><strong>SlideUp</strong><br></a></h5>
+                </div>
+                <div class="collapse item-7" role="tabpanel" data-parent="#accordion-1">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><button class="btn btn-danger" id="slideUpBtnReset" type="button">Reset</button><button class="btn btn-success" id="slideUpBtn" type="button">SlideUp</button></div>
+                            <div class="col-xl-8">
+                                <p id="slideUpP">Click the button to slideUp<br></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab">
+                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-8" href="#accordion-1 .item-8"><strong>SlideDown</strong><br></a></h5>
+                </div>
+                <div class="collapse item-8" role="tabpanel" data-parent="#accordion-1">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><button class="btn btn-danger" id="slideDownBtnReset" type="button">Reset</button><button class="btn btn-success" id="slideDownBtn" type="button">SlideDown</button></div>
+                            <div class="col-xl-8">
+                                <p id="slideDownP">Click the button to slideDown<br></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab">
+                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-9" href="#accordion-1 .item-9"><strong>FadeIn</strong><br></a></h5>
+                </div>
+                <div class="collapse item-9" role="tabpanel" data-parent="#accordion-1">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><button class="btn btn-danger" id="fadeInBtnReset" type="button">Reset</button><button class="btn btn-success" id="fadeInBtn" type="button">FadeIn</button></div>
+                            <div class="col-xl-8">
+                                <p id="fadeInP">Click the button to Fade In<br></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab">
+                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-10" href="#accordion-1 .item-10"><strong>FadeOut</strong><br></a></h5>
+                </div>
+                <div class="collapse item-10" role="tabpanel" data-parent="#accordion-1">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><button class="btn btn-danger" id="fadeOutBtnReset" type="button">Reset</button><button class="btn btn-success" id="fadeOutBtn" type="button">FadeOut</button></div>
+                            <div class="col-xl-8">
+                                <p id="fadeOutP">Click the button to Fade Out<br></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab">
+                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-11" href="#accordion-1 .item-11"><strong>Before</strong><br></a></h5>
+                </div>
+                <div class="collapse item-11" role="tabpanel" data-parent="#accordion-1">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-xl-2 text-center d-xl-flex justify-content-xl-center align-items-xl-center"><button class="btn btn-success" id="beforeBtn" type="button">Before</button><button class="btn btn-danger" id="beforeBtnReset" type="button">Reset</button></div>
+                            <div class="col">
+                                <p id="beforeP">Click the button to add content before this paragraph /\ /\ /\<br></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab">
+                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-12" href="#accordion-1 .item-12"><strong>After</strong><br></a></h5>
+                </div>
+                <div class="collapse item-12" role="tabpanel" data-parent="#accordion-1">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><button class="btn btn-success" id="afterBtn" type="button">After</button><button class="btn btn-danger" id="afterBtnReset" type="button">Reset</button></div>
+                            <div class="col">
+                                <p id="afterP">Click the button to add content After this paragraph&nbsp; \/ \/ \/<br></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab">
+                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-13" href="#accordion-1 .item-13"><strong>Html</strong><br></a></h5>
+                </div>
+                <div class="collapse item-13" role="tabpanel" data-parent="#accordion-1">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><button class="btn btn-success" id="htmlBtn" type="button">HTML</button><button class="btn btn-danger" id="htmlBtnReset" type="button">Reset</button></div>
+                            <div class="col">
+                                <p id="htmlP">Click the button to change this Paragraph with Tabs<br></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab">
+                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-14" href="#accordion-1 .item-14"><strong>Attr</strong><br></a></h5>
+                </div>
+                <div class="collapse item-14" role="tabpanel" data-parent="#accordion-1">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><button class="btn btn-success" id="attrBtn" type="button">Attr</button><button class="btn btn-danger" id="attrBtnReset" type="button">Reset</button></div>
+                            <div class="col">
+                                <p>Click the button to change this Image width from 200px to 400px<br></p><img id="attrImg" src="assets/img/20191020_193954472_iOS.jpg" width="200px"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab">
+                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-15" href="#accordion-1 .item-15"><strong>Val</strong><br></a></h5>
+                </div>
+                <div class="collapse item-15" role="tabpanel" data-parent="#accordion-1">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><button class="btn btn-success" id="valBtn" type="button">Val</button><button class="btn btn-danger" id="valBtnReset" type="button">Reset</button></div>
+                            <div class="col">
+                                <p>Click the button to change the input value to CODING DOJO<br></p>
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text">Val</span></div><input class="form-control" type="text" id="valInput">
+                                    <div class="input-group-append"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab">
+                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-16" href="#accordion-1 .item-16"><strong>Text</strong><br></a></h5>
+                </div>
+                <div class="collapse item-16" role="tabpanel" data-parent="#accordion-1">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><button class="btn btn-success" id="textBtn" type="button">Text</button><button class="btn btn-danger" id="textBtnReset" type="button">Reset</button></div>
+                            <div class="col">
+                                <p id="textP">Click the button to change the Text of this Paragraph&nbsp;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+.navbar.navbar-light.navbar-expand-md {
+  background: #3c4c5b;
+  padding-left: 10px;
+  width: 100%;
+  transition: padding 0.5s;
+  -webkit-transition: padding 0.5s;
+  max-height: 5%;
+}
+
+#home_link {
+  width: 90px;
+  height: 28px;
+}
+
+.navbar.navbar-light.navbar-expand-md {
+}
+
+.row {
+  vertical-align: middle;
+}
+
+.text-center.front-center {
+  color: #3c4c5b;
+}
+
+a {
+  color: #3c4c5b;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+#addClass {
+  display: flex;
+  justify-content: space-between;
+}
+
+#addClass button {
+  margin: 10px 60px 10px 10px;
+}
+
+#addClass div {
+  width: 210px;
+}
+
+button.btn.btn-danger {
+  display: none;
+}
+
+#slideToggle {
+  display: flex;
+  justify-content: space-between;
+}
+
+#slideToggle button {
+  margin: 10px 60px 10px 10px;
+}
+
+#slideToggle div {
+  width: 130px;
+}
+
+#append {
+  display: flex;
+  justify-content: space-between;
+}
+
+#append button {
+  margin: 10px 60px 10px 10px;
+}
+
+#append div {
+  width: 130px;
+}
+
+#clickAction p.text-right {
+  display: none;
+}
+
+#clickBtn2 {
+  display: none;
+}
+
+#showRemove {
+  display: none;
+}
+
+#showAlert {
+  display: none;
+}
+
+#slideDownP {
+  display: none;
+}
+
+#slideUpBtnReset {
+  display: none;
+}
+
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+  padding-bottom: 4rem;
+}
+
+#fadeInP {
+  display: none;
+}
+
